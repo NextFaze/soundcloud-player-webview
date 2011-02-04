@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width" name="viewport" />
+<meta content="video" name="medium" />
+
+<script type="text/javascript">
+window.SC = {"bufferTracks":[],"bufferComments":[],"cookieDomain":"soundcloud.com","assetPath":"a1.soundcloud.com","assetPathSSL":"soundcloud.com"};
+</script>
+<link href="http://a1.soundcloud.com/stylesheets/general.css?956f56" media="all" rel="stylesheet" type="text/css" />
+<link href="http://a1.soundcloud.com/stylesheets/special.css?956f56" media="all" rel="stylesheet" type="text/css" />
+
+<style>
+/* style overrides */
+.player .timecodes { display: none }
+</style>
+</head>
+
+<body class="show full-music" id="tracks">
+
+<div id="main-content"><div id="main-content-inner">
+<div class="player mode small haudio" data-sc-track="$trackId">
+
+<div class="container"><div class="controls"><a href="#play" class="play" onclick="return false;" rel="nofollow">Play</a></div>
+<div class="display"><div class="progress"></div>
+<img class="waveform" src="http://waveforms.soundcloud.com/$trackCode_m.png" unselectable="on" />
+<img class="waveform-overlay" src="http://a1.soundcloud.com/images/player-overlay.png?956f56" unselectable="on" />
+<div class="playhead aural"></div>
+<div class="seekhead hidden"><div><span></span></div></div>
+</div>
+</div>
+
+</div></div></div>
+
+<script type="text/javascript">
+var streamUrl = "http://media.soundcloud.com/stream/$trackCode";
+// var streamUrl = "http://media.soundcloud.com/stream/$trackCode?stream_token=50fK7";
+window.SC.bufferTracks.push({"id":$trackId,"streamUrl":streamUrl});
+</script>
+
+<script src="http://a1.soundcloud.com/javascripts/base.js?956f56" type="text/javascript"></script>
+
+</body></html>

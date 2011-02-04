@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5E3D68012FBB8C200586AD9 /* TestAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D67E12FBB8C200586AD9 /* TestAppViewController.m */; };
+		B5E3D68112FBB8C200586AD9 /* TestAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E3D67F12FBB8C200586AD9 /* TestAppViewController.xib */; };
+		B5E3D68512FBBA9500586AD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D68212FBBA9500586AD9 /* main.m */; };
+		B5E3D68612FBBA9500586AD9 /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D68412FBBA9500586AD9 /* TestAppDelegate.m */; };
+		B5E3D69512FBBB9E00586AD9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E3D69412FBBB9E00586AD9 /* MainWindow.xib */; };
+		B5E3D71912FBC36100586AD9 /* SCPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D71312FBC36100586AD9 /* SCPlayerView.h */; };
+		B5E3D71A12FBC36100586AD9 /* SCPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D71412FBC36100586AD9 /* SCPlayerView.m */; };
+		B5E3D71B12FBC36100586AD9 /* SCPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D71512FBC36100586AD9 /* SCPlayerViewController.h */; };
+		B5E3D71C12FBC36100586AD9 /* SCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D71612FBC36100586AD9 /* SCPlayerViewController.m */; };
+		B5E3D71F12FBC36100586AD9 /* SCPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D71412FBC36100586AD9 /* SCPlayerView.m */; };
+		B5E3D72012FBC36100586AD9 /* SCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D71612FBC36100586AD9 /* SCPlayerViewController.m */; };
+		B5E3D72312FBC48500586AD9 /* SCPlayerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E3D72212FBC48500586AD9 /* SCPlayerView.bundle */; };
+		B5E3D84A12FBD3BC00586AD9 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D83712FBD3BC00586AD9 /* JSON.h */; };
+		B5E3D84B12FBD3BC00586AD9 /* NSObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D83812FBD3BC00586AD9 /* NSObject+JSON.h */; };
+		B5E3D84C12FBD3BC00586AD9 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83912FBD3BC00586AD9 /* NSObject+JSON.m */; };
+		B5E3D84D12FBD3BC00586AD9 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D83A12FBD3BC00586AD9 /* SBJsonParser.h */; };
+		B5E3D84E12FBD3BC00586AD9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83B12FBD3BC00586AD9 /* SBJsonParser.m */; };
+		B5E3D84F12FBD3BC00586AD9 /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D83C12FBD3BC00586AD9 /* SBJsonStreamParser.h */; };
+		B5E3D85012FBD3BC00586AD9 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83D12FBD3BC00586AD9 /* SBJsonStreamParser.m */; };
+		B5E3D85112FBD3BC00586AD9 /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D83E12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.h */; };
+		B5E3D85212FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83F12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m */; };
+		B5E3D85312FBD3BC00586AD9 /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D84012FBD3BC00586AD9 /* SBJsonStreamParserState.h */; };
+		B5E3D85412FBD3BC00586AD9 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84112FBD3BC00586AD9 /* SBJsonStreamParserState.m */; };
+		B5E3D85512FBD3BC00586AD9 /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D84212FBD3BC00586AD9 /* SBJsonStreamWriter.h */; };
+		B5E3D85612FBD3BC00586AD9 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84312FBD3BC00586AD9 /* SBJsonStreamWriter.m */; };
+		B5E3D85712FBD3BC00586AD9 /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D84412FBD3BC00586AD9 /* SBJsonStreamWriterState.h */; };
+		B5E3D85812FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84512FBD3BC00586AD9 /* SBJsonStreamWriterState.m */; };
+		B5E3D85912FBD3BC00586AD9 /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D84612FBD3BC00586AD9 /* SBJsonTokeniser.h */; };
+		B5E3D85A12FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84712FBD3BC00586AD9 /* SBJsonTokeniser.m */; };
+		B5E3D85B12FBD3BC00586AD9 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E3D84812FBD3BC00586AD9 /* SBJsonWriter.h */; };
+		B5E3D85C12FBD3BC00586AD9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84912FBD3BC00586AD9 /* SBJsonWriter.m */; };
+		B5E3D85D12FBD3BC00586AD9 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83912FBD3BC00586AD9 /* NSObject+JSON.m */; };
+		B5E3D85E12FBD3BC00586AD9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83B12FBD3BC00586AD9 /* SBJsonParser.m */; };
+		B5E3D85F12FBD3BC00586AD9 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83D12FBD3BC00586AD9 /* SBJsonStreamParser.m */; };
+		B5E3D86012FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83F12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m */; };
+		B5E3D86112FBD3BC00586AD9 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84112FBD3BC00586AD9 /* SBJsonStreamParserState.m */; };
+		B5E3D86212FBD3BC00586AD9 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84312FBD3BC00586AD9 /* SBJsonStreamWriter.m */; };
+		B5E3D86312FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84512FBD3BC00586AD9 /* SBJsonStreamWriterState.m */; };
+		B5E3D86412FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84712FBD3BC00586AD9 /* SBJsonTokeniser.m */; };
+		B5E3D86512FBD3BC00586AD9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84912FBD3BC00586AD9 /* SBJsonWriter.m */; };
+		B5E3D86612FBD3BC00586AD9 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83912FBD3BC00586AD9 /* NSObject+JSON.m */; };
+		B5E3D86712FBD3BC00586AD9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83B12FBD3BC00586AD9 /* SBJsonParser.m */; };
+		B5E3D86812FBD3BC00586AD9 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83D12FBD3BC00586AD9 /* SBJsonStreamParser.m */; };
+		B5E3D86912FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D83F12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m */; };
+		B5E3D86A12FBD3BC00586AD9 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84112FBD3BC00586AD9 /* SBJsonStreamParserState.m */; };
+		B5E3D86B12FBD3BC00586AD9 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84312FBD3BC00586AD9 /* SBJsonStreamWriter.m */; };
+		B5E3D86C12FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84512FBD3BC00586AD9 /* SBJsonStreamWriterState.m */; };
+		B5E3D86D12FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84712FBD3BC00586AD9 /* SBJsonTokeniser.m */; };
+		B5E3D86E12FBD3BC00586AD9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D84912FBD3BC00586AD9 /* SBJsonWriter.m */; };
+		BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668540F83F84100ABF98B /* Foundation.framework */; };
+		BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668560F83F84100ABF98B /* UIKit.framework */; };
+		BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */; };
+		BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
+		BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BD80A3EB0F8A69980067878C /* OCMock.framework */; };
+		BD80A6F20F8C87A60067878C /* UnitTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */; };
+		BD80A79A0F8D2EA50067878C /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */; };
+		BD80A79B0F8D2EA50067878C /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */; };
+		BD80A79C0F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD80A5590F8BC7BF0067878C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "soundcloud-player-webview";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD80A3F80F8A69DC0067878C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BD80A3F90F8A6A180067878C /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		32DBCF5E0370ADEE00C91783 /* soundcloud-player-webview_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "soundcloud-player-webview_Prefix.pch"; sourceTree = "<group>"; };
+		B5E3D67612FBB86D00586AD9 /* Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E3D67C12FBB89E00586AD9 /* Test App-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Test App-Info.plist"; sourceTree = "<group>"; };
+		B5E3D67D12FBB8C200586AD9 /* TestAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppViewController.h; sourceTree = "<group>"; };
+		B5E3D67E12FBB8C200586AD9 /* TestAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppViewController.m; sourceTree = "<group>"; };
+		B5E3D67F12FBB8C200586AD9 /* TestAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAppViewController.xib; sourceTree = "<group>"; };
+		B5E3D68212FBBA9500586AD9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5E3D68312FBBA9500586AD9 /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		B5E3D68412FBBA9500586AD9 /* TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
+		B5E3D69412FBBB9E00586AD9 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		B5E3D71312FBC36100586AD9 /* SCPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPlayerView.h; path = SCPlayerView/SCPlayerView.h; sourceTree = "<group>"; };
+		B5E3D71412FBC36100586AD9 /* SCPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPlayerView.m; path = SCPlayerView/SCPlayerView.m; sourceTree = "<group>"; };
+		B5E3D71512FBC36100586AD9 /* SCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPlayerViewController.h; path = SCPlayerView/SCPlayerViewController.h; sourceTree = "<group>"; };
+		B5E3D71612FBC36100586AD9 /* SCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPlayerViewController.m; path = SCPlayerView/SCPlayerViewController.m; sourceTree = "<group>"; };
+		B5E3D72212FBC48500586AD9 /* SCPlayerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SCPlayerView.bundle; path = SCPlayerView/SCPlayerView.bundle; sourceTree = "<group>"; };
+		B5E3D83712FBD3BC00586AD9 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		B5E3D83812FBD3BC00586AD9 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		B5E3D83912FBD3BC00586AD9 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		B5E3D83A12FBD3BC00586AD9 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		B5E3D83B12FBD3BC00586AD9 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		B5E3D83C12FBD3BC00586AD9 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		B5E3D83D12FBD3BC00586AD9 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		B5E3D83E12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		B5E3D83F12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		B5E3D84012FBD3BC00586AD9 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		B5E3D84112FBD3BC00586AD9 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		B5E3D84212FBD3BC00586AD9 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		B5E3D84312FBD3BC00586AD9 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		B5E3D84412FBD3BC00586AD9 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		B5E3D84512FBD3BC00586AD9 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		B5E3D84612FBD3BC00586AD9 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		B5E3D84712FBD3BC00586AD9 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		B5E3D84812FBD3BC00586AD9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		B5E3D84912FBD3BC00586AD9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		BD6668540F83F84100ABF98B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD6668560F83F84100ABF98B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD80A3A20F894C7F0067878C /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD80A3EB0F8A69980067878C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
+		BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BD80A7940F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = SOURCE_ROOT; };
+		BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = SOURCE_ROOT; };
+		BD80A7960F8D2EA50067878C /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = SOURCE_ROOT; };
+		BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = SOURCE_ROOT; };
+		BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = SOURCE_ROOT; };
+		BD80A7990F8D2EA50067878C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = SOURCE_ROOT; };
+		BD80A79E0F8D3B310067878C /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneUnitTest.sh; sourceTree = SOURCE_ROOT; };
+		D2AAC07E0554694100DB518D /* libsoundcloud-player-webview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libsoundcloud-player-webview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5E3D67412FBB86D00586AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD80A3A00F894C7F0067878C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD80A3EC0F8A69980067878C /* OCMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6668550F83F84100ABF98B /* Foundation.framework in Frameworks */,
+				BD6668570F83F84100ABF98B /* UIKit.framework in Frameworks */,
+				BD6668F80F83F87C00ABF98B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libsoundcloud-player-webview.a */,
+				BD80A3A20F894C7F0067878C /* UnitTest.app */,
+				B5E3D67612FBB86D00586AD9 /* Test App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* soundcloud-player-webview */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3D67112FBB83200586AD9 /* TestApp */,
+				B5E3D63612FBB5ED00586AD9 /* Sound Cloud Player */,
+				BD849B6E0F8921ED00EB1682 /* GoogleToolbox */,
+				BD849B6C0F8921BB00EB1682 /* UnitTests */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				BD80A6F10F8C87A60067878C /* UnitTest-Info.plist */,
+				BD80A79E0F8D3B310067878C /* RunIPhoneUnitTest.sh */,
+			);
+			name = "soundcloud-player-webview";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD80A3EB0F8A69980067878C /* OCMock.framework */,
+				BD6668560F83F84100ABF98B /* UIKit.framework */,
+				BD6668540F83F84100ABF98B /* Foundation.framework */,
+				BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* soundcloud-player-webview_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		B5E3D63612FBB5ED00586AD9 /* Sound Cloud Player */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3D83512FBD3A800586AD9 /* JSON framework */,
+				B5E3D72212FBC48500586AD9 /* SCPlayerView.bundle */,
+				B5E3D71312FBC36100586AD9 /* SCPlayerView.h */,
+				B5E3D71412FBC36100586AD9 /* SCPlayerView.m */,
+				B5E3D71512FBC36100586AD9 /* SCPlayerViewController.h */,
+				B5E3D71612FBC36100586AD9 /* SCPlayerViewController.m */,
+			);
+			name = "Sound Cloud Player";
+			sourceTree = "<group>";
+		};
+		B5E3D67112FBB83200586AD9 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3D69412FBBB9E00586AD9 /* MainWindow.xib */,
+				B5E3D68212FBBA9500586AD9 /* main.m */,
+				B5E3D68312FBBA9500586AD9 /* TestAppDelegate.h */,
+				B5E3D68412FBBA9500586AD9 /* TestAppDelegate.m */,
+				B5E3D67C12FBB89E00586AD9 /* Test App-Info.plist */,
+				B5E3D67D12FBB8C200586AD9 /* TestAppViewController.h */,
+				B5E3D67E12FBB8C200586AD9 /* TestAppViewController.m */,
+				B5E3D67F12FBB8C200586AD9 /* TestAppViewController.xib */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		B5E3D83512FBD3A800586AD9 /* JSON framework */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3D83612FBD3BC00586AD9 /* Classes */,
+			);
+			name = "JSON framework";
+			sourceTree = "<group>";
+		};
+		B5E3D83612FBD3BC00586AD9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B5E3D83712FBD3BC00586AD9 /* JSON.h */,
+				B5E3D83812FBD3BC00586AD9 /* NSObject+JSON.h */,
+				B5E3D83912FBD3BC00586AD9 /* NSObject+JSON.m */,
+				B5E3D83A12FBD3BC00586AD9 /* SBJsonParser.h */,
+				B5E3D83B12FBD3BC00586AD9 /* SBJsonParser.m */,
+				B5E3D83C12FBD3BC00586AD9 /* SBJsonStreamParser.h */,
+				B5E3D83D12FBD3BC00586AD9 /* SBJsonStreamParser.m */,
+				B5E3D83E12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.h */,
+				B5E3D83F12FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m */,
+				B5E3D84012FBD3BC00586AD9 /* SBJsonStreamParserState.h */,
+				B5E3D84112FBD3BC00586AD9 /* SBJsonStreamParserState.m */,
+				B5E3D84212FBD3BC00586AD9 /* SBJsonStreamWriter.h */,
+				B5E3D84312FBD3BC00586AD9 /* SBJsonStreamWriter.m */,
+				B5E3D84412FBD3BC00586AD9 /* SBJsonStreamWriterState.h */,
+				B5E3D84512FBD3BC00586AD9 /* SBJsonStreamWriterState.m */,
+				B5E3D84612FBD3BC00586AD9 /* SBJsonTokeniser.h */,
+				B5E3D84712FBD3BC00586AD9 /* SBJsonTokeniser.m */,
+				B5E3D84812FBD3BC00586AD9 /* SBJsonWriter.h */,
+				B5E3D84912FBD3BC00586AD9 /* SBJsonWriter.m */,
+			);
+			name = Classes;
+			path = "SCPlayerView/json-framework/Classes";
+			sourceTree = "<group>";
+		};
+		BD849B6C0F8921BB00EB1682 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
+		BD849B6E0F8921ED00EB1682 /* GoogleToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				BD80A7990F8D2EA50067878C /* GTMDefines.h */,
+				BD80A7960F8D2EA50067878C /* GTMSenTestCase.h */,
+				BD80A7950F8D2EA50067878C /* GTMSenTestCase.m */,
+				BD80A7970F8D2EA50067878C /* GTMIPhoneUnitTestMain.m */,
+				BD80A7940F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.h */,
+				BD80A7980F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m */,
+			);
+			name = GoogleToolbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E3D71912FBC36100586AD9 /* SCPlayerView.h in Headers */,
+				B5E3D71B12FBC36100586AD9 /* SCPlayerViewController.h in Headers */,
+				B5E3D84A12FBD3BC00586AD9 /* JSON.h in Headers */,
+				B5E3D84B12FBD3BC00586AD9 /* NSObject+JSON.h in Headers */,
+				B5E3D84D12FBD3BC00586AD9 /* SBJsonParser.h in Headers */,
+				B5E3D84F12FBD3BC00586AD9 /* SBJsonStreamParser.h in Headers */,
+				B5E3D85112FBD3BC00586AD9 /* SBJsonStreamParserAdapter.h in Headers */,
+				B5E3D85312FBD3BC00586AD9 /* SBJsonStreamParserState.h in Headers */,
+				B5E3D85512FBD3BC00586AD9 /* SBJsonStreamWriter.h in Headers */,
+				B5E3D85712FBD3BC00586AD9 /* SBJsonStreamWriterState.h in Headers */,
+				B5E3D85912FBD3BC00586AD9 /* SBJsonTokeniser.h in Headers */,
+				B5E3D85B12FBD3BC00586AD9 /* SBJsonWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B5E3D67512FBB86D00586AD9 /* Test App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5E3D67B12FBB86E00586AD9 /* Build configuration list for PBXNativeTarget "Test App" */;
+			buildPhases = (
+				B5E3D67212FBB86D00586AD9 /* Resources */,
+				B5E3D67312FBB86D00586AD9 /* Sources */,
+				B5E3D67412FBB86D00586AD9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test App";
+			productName = "Test App";
+			productReference = B5E3D67612FBB86D00586AD9 /* Test App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD80A3A10F894C7F0067878C /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD80A3B30F894CAE0067878C /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				BD80A3F80F8A69DC0067878C /* CopyFiles */,
+				BD80A39E0F894C7F0067878C /* Resources */,
+				BD80A39F0F894C7F0067878C /* Sources */,
+				BD80A3A00F894C7F0067878C /* Frameworks */,
+				BD80A3C90F894CDD0067878C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD80A55A0F8BC7BF0067878C /* PBXTargetDependency */,
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = BD80A3A20F894C7F0067878C /* UnitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2AAC07D0554694100DB518D /* soundcloud-player-webview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "soundcloud-player-webview" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "soundcloud-player-webview";
+			productName = "soundcloud-player-webview";
+			productReference = D2AAC07E0554694100DB518D /* libsoundcloud-player-webview.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "soundcloud-player-webview" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* soundcloud-player-webview */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* soundcloud-player-webview */,
+				BD80A3A10F894C7F0067878C /* UnitTest */,
+				B5E3D67512FBB86D00586AD9 /* Test App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5E3D67212FBB86D00586AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E3D68112FBB8C200586AD9 /* TestAppViewController.xib in Resources */,
+				B5E3D69512FBBB9E00586AD9 /* MainWindow.xib in Resources */,
+				B5E3D72312FBC48500586AD9 /* SCPlayerView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD80A39E0F894C7F0067878C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD80A6F20F8C87A60067878C /* UnitTest-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD80A3C90F894CDD0067878C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\"$GTM_PATH/UnitTesting/RunIPhoneUnitTest.sh\"\n\n\"$PROJECT_DIR/RunIPhoneUnitTest.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5E3D67312FBB86D00586AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E3D68012FBB8C200586AD9 /* TestAppViewController.m in Sources */,
+				B5E3D68512FBBA9500586AD9 /* main.m in Sources */,
+				B5E3D68612FBBA9500586AD9 /* TestAppDelegate.m in Sources */,
+				B5E3D71F12FBC36100586AD9 /* SCPlayerView.m in Sources */,
+				B5E3D72012FBC36100586AD9 /* SCPlayerViewController.m in Sources */,
+				B5E3D85D12FBD3BC00586AD9 /* NSObject+JSON.m in Sources */,
+				B5E3D85E12FBD3BC00586AD9 /* SBJsonParser.m in Sources */,
+				B5E3D85F12FBD3BC00586AD9 /* SBJsonStreamParser.m in Sources */,
+				B5E3D86012FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m in Sources */,
+				B5E3D86112FBD3BC00586AD9 /* SBJsonStreamParserState.m in Sources */,
+				B5E3D86212FBD3BC00586AD9 /* SBJsonStreamWriter.m in Sources */,
+				B5E3D86312FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */,
+				B5E3D86412FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */,
+				B5E3D86512FBD3BC00586AD9 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD80A39F0F894C7F0067878C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD80A79A0F8D2EA50067878C /* GTMSenTestCase.m in Sources */,
+				BD80A79B0F8D2EA50067878C /* GTMIPhoneUnitTestMain.m in Sources */,
+				BD80A79C0F8D2EA50067878C /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				B5E3D86612FBD3BC00586AD9 /* NSObject+JSON.m in Sources */,
+				B5E3D86712FBD3BC00586AD9 /* SBJsonParser.m in Sources */,
+				B5E3D86812FBD3BC00586AD9 /* SBJsonStreamParser.m in Sources */,
+				B5E3D86912FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m in Sources */,
+				B5E3D86A12FBD3BC00586AD9 /* SBJsonStreamParserState.m in Sources */,
+				B5E3D86B12FBD3BC00586AD9 /* SBJsonStreamWriter.m in Sources */,
+				B5E3D86C12FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */,
+				B5E3D86D12FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */,
+				B5E3D86E12FBD3BC00586AD9 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E3D71A12FBC36100586AD9 /* SCPlayerView.m in Sources */,
+				B5E3D71C12FBC36100586AD9 /* SCPlayerViewController.m in Sources */,
+				B5E3D84C12FBD3BC00586AD9 /* NSObject+JSON.m in Sources */,
+				B5E3D84E12FBD3BC00586AD9 /* SBJsonParser.m in Sources */,
+				B5E3D85012FBD3BC00586AD9 /* SBJsonStreamParser.m in Sources */,
+				B5E3D85212FBD3BC00586AD9 /* SBJsonStreamParserAdapter.m in Sources */,
+				B5E3D85412FBD3BC00586AD9 /* SBJsonStreamParserState.m in Sources */,
+				B5E3D85612FBD3BC00586AD9 /* SBJsonStreamWriter.m in Sources */,
+				B5E3D85812FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */,
+				B5E3D85A12FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */,
+				B5E3D85C12FBD3BC00586AD9 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD80A55A0F8BC7BF0067878C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* soundcloud-player-webview */;
+			targetProxy = BD80A5590F8BC7BF0067878C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "soundcloud-player-webview_Prefix.pch";
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG=1";
+				PRODUCT_NAME = "soundcloud-player-webview";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "soundcloud-player-webview_Prefix.pch";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "soundcloud-player-webview";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B5E3D67912FBB86E00586AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "TestApp/Test App-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test App";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5E3D67A12FBB86E00586AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "TestApp/Test App-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Test App";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BD80A3A40F894C800067878C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "soundcloud-player-webview_Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				SDKROOT = iphonesimulator2.2.1;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+			};
+			name = Debug;
+		};
+		BD80A3A50F894C800067878C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GTM_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				INFOPLIST_FILE = "UnitTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTest;
+				SDKROOT = iphonesimulator2.2.1;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "soundcloud-player-webview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "soundcloud-player-webview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5E3D67B12FBB86E00586AD9 /* Build configuration list for PBXNativeTarget "Test App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5E3D67912FBB86E00586AD9 /* Debug */,
+				B5E3D67A12FBB86E00586AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD80A3B30F894CAE0067878C /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD80A3A40F894C800067878C /* Debug */,
+				BD80A3A50F894C800067878C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
