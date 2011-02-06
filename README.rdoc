@@ -1,0 +1,35 @@
+= soundcloud-player-webview
+
+== Description
+
+An Objective C interface for creating a sound cloud player UI.
+
+== Integration within a project
+
+git clone git://github.com/2moro/soundcloud-player-webview.git
+cd soundcloud-player-webview
+git submodule update --recursive --init
+
+Drag the "Sound Cloud Player" group into your xcode project, or alternatively compile as a static library.
+
+== Synopsis
+
+	// instantiate SCPlayerWebViewController and add its view as a subview
+	scpController = [[SCPlayerViewController alloc] initWithFrame:f];
+	scpController.delegate = self;
+	[scpController setClientKey:clientKey];
+	[self.view addSubview:v];
+
+    // loading tracks:
+	[scpController loadTrack:@"6872237"];
+	
+	// load a permalink url
+	[scpController loadPermalink:@"http://soundcloud.com/iambrains/brains-onion-mix"];
+	
+	// load from HTML <object> tag.
+	// e.g. <object width="100%" height="81" data="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fiambrains%2Fbrains-onion-mix"
+	[scpController loadHTMLObject:html];
+		
+== See Also
+
+See also the Test App within this project for testing and example usage

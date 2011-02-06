@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SCPlayerViewController.h"
 
-@interface TestAppViewController : UIViewController {
+@interface TestAppViewController : UIViewController <SCPlayerViewControllerDelegate> {
 	UITextField *tfTrack, *tfKey;
 	UIButton *buttonLoad;
 	UILabel *labelDiagnostics;

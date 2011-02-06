@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49EC45A812FD2BEE00B444DD /* SCPlayerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EC45A712FD2BEE00B444DD /* SCPlayerViewControllerDelegate.h */; };
+		49EC45AB12FD2C6F00B444DD /* SCPlayerViewError.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC45AA12FD2C6F00B444DD /* SCPlayerViewError.m */; };
+		49EC45AC12FD2C6F00B444DD /* SCPlayerViewError.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EC45A912FD2C6F00B444DD /* SCPlayerViewError.h */; };
+		49EC45AD12FD2C6F00B444DD /* SCPlayerViewError.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC45AA12FD2C6F00B444DD /* SCPlayerViewError.m */; };
+		49EC45AE12FD2C6F00B444DD /* SCPlayerViewError.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC45AA12FD2C6F00B444DD /* SCPlayerViewError.m */; };
+		49EDA7BA12FE350300036F58 /* SCPlayerViewDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EDA7B912FE350300036F58 /* SCPlayerViewDebugging.h */; };
+		49EDA8A212FE404700036F58 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EDA8A112FE404700036F58 /* Icon.png */; };
 		B5E3D68012FBB8C200586AD9 /* TestAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D67E12FBB8C200586AD9 /* TestAppViewController.m */; };
 		B5E3D68112FBB8C200586AD9 /* TestAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E3D67F12FBB8C200586AD9 /* TestAppViewController.xib */; };
 		B5E3D68512FBBA9500586AD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D68212FBBA9500586AD9 /* main.m */; };
@@ -92,7 +99,13 @@
 
 /* Begin PBXFileReference section */
 		32DBCF5E0370ADEE00C91783 /* soundcloud-player-webview_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "soundcloud-player-webview_Prefix.pch"; sourceTree = "<group>"; };
-		B5E3D67612FBB86D00586AD9 /* Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EC45A712FD2BEE00B444DD /* SCPlayerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPlayerViewControllerDelegate.h; path = SCPlayerView/SCPlayerViewControllerDelegate.h; sourceTree = "<group>"; };
+		49EC45A912FD2C6F00B444DD /* SCPlayerViewError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPlayerViewError.h; path = SCPlayerView/SCPlayerViewError.h; sourceTree = "<group>"; };
+		49EC45AA12FD2C6F00B444DD /* SCPlayerViewError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPlayerViewError.m; path = SCPlayerView/SCPlayerViewError.m; sourceTree = "<group>"; };
+		49EDA7B912FE350300036F58 /* SCPlayerViewDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPlayerViewDebugging.h; path = SCPlayerView/SCPlayerViewDebugging.h; sourceTree = "<group>"; };
+		49EDA8A112FE404700036F58 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		49EDA8B012FE41F100036F58 /* README.rdoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rdoc; sourceTree = "<group>"; };
+		B5E3D67612FBB86D00586AD9 /* SCPlayerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPlayerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E3D67C12FBB89E00586AD9 /* Test App-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Test App-Info.plist"; sourceTree = "<group>"; };
 		B5E3D67D12FBB8C200586AD9 /* TestAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppViewController.h; sourceTree = "<group>"; };
 		B5E3D67E12FBB8C200586AD9 /* TestAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppViewController.m; sourceTree = "<group>"; };
@@ -125,7 +138,6 @@
 		B5E3D84712FBD3BC00586AD9 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
 		B5E3D84812FBD3BC00586AD9 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		B5E3D84912FBD3BC00586AD9 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		B5E3D95B12FBDF9C00586AD9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		BD6668540F83F84100ABF98B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BD6668560F83F84100ABF98B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BD6668F70F83F87C00ABF98B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,7 +188,7 @@
 			children = (
 				D2AAC07E0554694100DB518D /* libsoundcloud-player-webview.a */,
 				BD80A3A20F894C7F0067878C /* UnitTest.app */,
-				B5E3D67612FBB86D00586AD9 /* Test App.app */,
+				B5E3D67612FBB86D00586AD9 /* SCPlayerView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +196,7 @@
 		0867D691FE84028FC02AAC07 /* soundcloud-player-webview */ = {
 			isa = PBXGroup;
 			children = (
-				B5E3D95B12FBDF9C00586AD9 /* README */,
+				49EDA8B012FE41F100036F58 /* README.rdoc */,
 				B5E3D67112FBB83200586AD9 /* TestApp */,
 				B5E3D63612FBB5ED00586AD9 /* Sound Cloud Player */,
 				BD849B6E0F8921ED00EB1682 /* GoogleToolbox */,
@@ -226,6 +238,10 @@
 				B5E3D71412FBC36100586AD9 /* SCPlayerView.m */,
 				B5E3D71512FBC36100586AD9 /* SCPlayerViewController.h */,
 				B5E3D71612FBC36100586AD9 /* SCPlayerViewController.m */,
+				49EC45A712FD2BEE00B444DD /* SCPlayerViewControllerDelegate.h */,
+				49EC45A912FD2C6F00B444DD /* SCPlayerViewError.h */,
+				49EC45AA12FD2C6F00B444DD /* SCPlayerViewError.m */,
+				49EDA7B912FE350300036F58 /* SCPlayerViewDebugging.h */,
 			);
 			name = "Sound Cloud Player";
 			sourceTree = "<group>";
@@ -233,6 +249,7 @@
 		B5E3D67112FBB83200586AD9 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				49EDA8A112FE404700036F58 /* Icon.png */,
 				B5E3D69412FBBB9E00586AD9 /* MainWindow.xib */,
 				B5E3D68212FBBA9500586AD9 /* main.m */,
 				B5E3D68312FBBA9500586AD9 /* TestAppDelegate.h */,
@@ -319,6 +336,9 @@
 				B5E3D85712FBD3BC00586AD9 /* SBJsonStreamWriterState.h in Headers */,
 				B5E3D85912FBD3BC00586AD9 /* SBJsonTokeniser.h in Headers */,
 				B5E3D85B12FBD3BC00586AD9 /* SBJsonWriter.h in Headers */,
+				49EC45A812FD2BEE00B444DD /* SCPlayerViewControllerDelegate.h in Headers */,
+				49EC45AC12FD2C6F00B444DD /* SCPlayerViewError.h in Headers */,
+				49EDA7BA12FE350300036F58 /* SCPlayerViewDebugging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +359,7 @@
 			);
 			name = "Test App";
 			productName = "Test App";
-			productReference = B5E3D67612FBB86D00586AD9 /* Test App.app */;
+			productReference = B5E3D67612FBB86D00586AD9 /* SCPlayerView.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BD80A3A10F894C7F0067878C /* UnitTest */ = {
@@ -384,6 +404,9 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "2moro mobile";
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "soundcloud-player-webview" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -414,6 +437,7 @@
 				B5E3D68112FBB8C200586AD9 /* TestAppViewController.xib in Resources */,
 				B5E3D69512FBBB9E00586AD9 /* MainWindow.xib in Resources */,
 				B5E3D72312FBC48500586AD9 /* SCPlayerView.bundle in Resources */,
+				49EDA8A212FE404700036F58 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +487,7 @@
 				B5E3D86312FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */,
 				B5E3D86412FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */,
 				B5E3D86512FBD3BC00586AD9 /* SBJsonWriter.m in Sources */,
+				49EC45AB12FD2C6F00B444DD /* SCPlayerViewError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +507,7 @@
 				B5E3D86C12FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */,
 				B5E3D86D12FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */,
 				B5E3D86E12FBD3BC00586AD9 /* SBJsonWriter.m in Sources */,
+				49EC45AE12FD2C6F00B444DD /* SCPlayerViewError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +526,7 @@
 				B5E3D85812FBD3BC00586AD9 /* SBJsonStreamWriterState.m in Sources */,
 				B5E3D85A12FBD3BC00586AD9 /* SBJsonTokeniser.m in Sources */,
 				B5E3D85C12FBD3BC00586AD9 /* SBJsonWriter.m in Sources */,
+				49EC45AD12FD2C6F00B444DD /* SCPlayerViewError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +611,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				GCC_PREPROCESSOR_DEFINITIONS = "SCPLAYER_DEBUG=1";
 				INFOPLIST_FILE = "TestApp/Test App-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -593,7 +621,8 @@
 					UIKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = "Test App";
+				PRODUCT_NAME = SCPlayerView;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -608,6 +637,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				GCC_PREPROCESSOR_DEFINITIONS = "SCPLAYER_DEBUG=1";
 				INFOPLIST_FILE = "TestApp/Test App-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (

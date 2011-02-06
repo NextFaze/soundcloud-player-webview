@@ -7,6 +7,7 @@
 //
 
 #import "SCPlayerView.h"
+#import "SCPlayerViewError.h"
 
 #define BASE_URL @"http://soundcloud.com"
 
@@ -31,14 +32,16 @@
 
 - (id)initWithFrame:(CGRect)f {
 	if(self = [super initWithFrame:f]) {
-		webView = [[self nonScrollableWebView:f] retain];
-		webView.delegate = self;
 		
-		webViewLoaded = NO;
+		self.backgroundColor = [UIColor clearColor];
+		
+		webView = [[self nonScrollableWebView:CGRectMake(0, 0, f.size.width, SCPlayerViewHeight)] retain];
+		webView.delegate = nil;
+		webView.backgroundColor = [UIColor clearColor];
 		
 		activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
 		activityView.hidesWhenStopped = YES;
-		activityView.center = CGPointMake(f.size.width / 2.0, f.size.height / 2.0);
+		activityView.center = CGPointMake(f.size.width / 2.0, SCPlayerViewHeight / 2.0);
 		
 		[self addSubview:webView];
 		[self addSubview:activityView];
@@ -56,8 +59,18 @@
 
 #pragma mark -
 
+- (id<UIWebViewDelegate>)delegate {
+	return webView.delegate;
+}
+- (void)setDelegate:(id <UIWebViewDelegate>)delegate {
+	webView.delegate = delegate;
+}
+
+- (void)setActivityStyle:(UIActivityIndicatorViewStyle)style {
+	activityView.activityIndicatorViewStyle = style;
+}
+
 - (void)load:(NSString *)html {
-	NSLog(@"html: %@", html);
 	[webView loadHTMLString:html baseURL:[NSURL URLWithString:BASE_URL]];
 }
 
@@ -67,19 +80,6 @@
 	} else {
 		[activityView stopAnimating];
 	}
-
-	activityView.activityIndicatorViewStyle = webViewLoaded ? UIActivityIndicatorViewStyleWhite : UIActivityIndicatorViewStyleGray;
-}
-
-#pragma mark UIWebViewDelegate
-
-- (void)webViewDidFinishLoad:(UIWebView *)wv {
-	webViewLoaded = YES;
-	[self setLoading:NO];
-}
-
-- (void)webView:(UIWebView *)wv didFailLoadWithError:(NSError *)error {
-	[self setLoading:NO];
 }
 
 @end

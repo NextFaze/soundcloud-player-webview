@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SCPlayerViewDebugging.h"
 
+#define SCPlayerViewHeight 32
 
-@interface SCPlayerView : UIView <UIWebViewDelegate> {
+@interface SCPlayerView : UIView {
 	UIActivityIndicatorView *activityView;
 	UIWebView *webView;
-	BOOL webViewLoaded;
 }
+
+@property (nonatomic, assign) id<UIWebViewDelegate> delegate;
 
 - (void)load:(NSString *)html;
 - (void)setLoading:(BOOL)value;
+- (void)setActivityStyle:(UIActivityIndicatorViewStyle)style;
 
 @end

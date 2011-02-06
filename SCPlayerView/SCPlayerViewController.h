@@ -8,18 +8,25 @@
 
 #import <Foundation/Foundation.h>
 #import "SCPlayerView.h"
+#import "SCPlayerViewControllerDelegate.h"
+#import "SCPlayerViewError.h"
 
-@interface SCPlayerViewController : NSObject {
+@interface SCPlayerViewController : NSObject <UIWebViewDelegate> {
 	SCPlayerView *view;
 	NSString *clientKey;
 	NSMutableData *apiResponse;
+	id<SCPlayerViewControllerDelegate> delegate;
 }
 
 @property (nonatomic, retain) SCPlayerView *view;
 @property (nonatomic, retain) NSString *clientKey;
+@property (nonatomic, assign) id<SCPlayerViewControllerDelegate> delegate;
 
-- (id)initWithWidth:(CGFloat)width;
+- (id)initWithFrame:(CGRect)f;
 
 - (void)loadTrack:(NSString *)track;
+- (void)loadPermalink:(NSString *)url;
+- (void)loadHTMLObject:(NSString *)html;
 
 @end
+
