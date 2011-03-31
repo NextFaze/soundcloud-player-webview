@@ -124,10 +124,10 @@
 		NSString *waveform_url = [data valueForKey:@"waveform_url"];
 		NSString *trackId = [[data valueForKey:@"id"] stringValue];
 		NSString *trackCode = nil;
-		NSRange trackCodeRange = [waveform_url rangeOfString:@"soundcloud.com/.*?_m.png" options:NSRegularExpressionSearch|NSCaseInsensitiveSearch];
-
+		NSRange trackCodeRange = [waveform_url rangeOfString:@"/" options:NSBackwardsSearch];
+        
 		if(trackCodeRange.location != NSNotFound) {
-			trackCode = [waveform_url substringWithRange:NSMakeRange(trackCodeRange.location + 15, trackCodeRange.length - 15 - 6)];
+			trackCode = [waveform_url substringWithRange:NSMakeRange(trackCodeRange.location + 1, waveform_url.length - trackCodeRange.location - 7)];  // _m.png
 		}
 		
 		if(trackCode) {
